@@ -1,0 +1,59 @@
+---
+const services = [
+    {
+        title: "Ortodoncia Convencional",
+        description:
+            "Brackets metálicos de alta calidad para corregir la alineación dental de manera efectiva.",
+        icon: "🦷",
+    },
+    {
+        title: "Ortodoncia Estética",
+        description:
+            "Brackets de zafiro o cerámica que se mimetizan con el color de tus dientes.",
+        icon: "✨",
+    },
+    {
+        title: "Alineadores Invisibles",
+        description:
+            "Corrección dental discreta y removible, ideal para un estilo de vida activo.",
+        icon: "🛡️",
+    },
+    {
+        title: "Ortopedia Maxilar",
+        description:
+            "Tratamientos preventivos y correctivos para el desarrollo adecuado de los maxilares en niños.",
+        icon: "👶",
+    },
+];
+---
+
+<section id="servicios" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+                Nuestros Servicios
+            </h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">
+                Ofrecemos una amplia gama de tratamientos ortodónticos diseñados
+                para satisfacer tus necesidades específicas y mejorar tu salud
+                bucal.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {
+                services.map((service) => (
+                    <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition duration-300 border border-gray-100">
+                        <div class="text-4xl mb-4">{service.icon}</div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">
+                            {service.title}
+                        </h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            {service.description}
+                        </p>
+                    </div>
+                ))
+            }
+        </div>
+    </div>
+</section>

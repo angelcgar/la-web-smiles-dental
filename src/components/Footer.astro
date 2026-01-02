@@ -1,0 +1,53 @@
+---
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="bg-gray-900 text-white py-12">
+    <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-6 md:mb-0 text-center md:text-left">
+                <h3 class="text-2xl font-bold mb-2">Smiles Dental M.A.S.</h3>
+                <p class="text-gray-400 text-sm">
+                    Cuidando tu sonrisa con pasión y profesionalismo.
+                </p>
+            </div>
+
+            <div class="flex space-x-6 mb-6 md:mb-0">
+                <a
+                    href="#"
+                    class="text-gray-400 hover:text-white transition duration-300"
+                    >Inicio</a
+                >
+                <a
+                    href="#nosotros"
+                    class="text-gray-400 hover:text-white transition duration-300"
+                    >Nosotros</a
+                >
+                <a
+                    href="#servicios"
+                    class="text-gray-400 hover:text-white transition duration-300"
+                    >Servicios</a
+                >
+                <a
+                    href="#contacto"
+                    class="text-gray-400 hover:text-white transition duration-300"
+                    >Contacto</a
+                >
+            </div>
+        </div>
+
+        <hr class="border-gray-800 my-8" />
+
+        <div
+            class="flex flex-col md:flex-row justify-between items-center text-sm text-gray-500"
+        >
+            <p>
+                &copy; {currentYear} Smiles Dental M.A.S. Todos los derechos reservados.
+            </p>
+            <div class="mt-4 md:mt-0">
+                <span class="mr-4">Aviso de Privacidad</span>
+                <span>Términos y Condiciones</span>
+            </div>
+        </div>
+    </div>
+</footer>
